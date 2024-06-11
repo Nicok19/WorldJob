@@ -10,3 +10,13 @@
 body {
   font-family: 'Nunito', sans-serif;
 }
+
+:root {
+  --primary-color: #5D5FEF;
+  --secondary-color: #FFBB95;
+  --tertiary-color: #ABCDFF;
+  --background-color: #494949;
+  --backgroundSecundary-color: #C4C4C4;
+  --white-color: #fff;
+  --border-radius: 8px;
+}
