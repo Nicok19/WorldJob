@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./presentationProduct.module.css";
-import { DownloadApk } from "../../../../styles/Button__ApkDownload";
+import { DownloadApk } from "../../../../../styles/Button__ApkDownload";
 
 function PresentationProduct() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
 
 <div className={styles.container__data}>
     <h1>Live<br></br>Anywhere</h1>
@@ -17,7 +17,7 @@ function PresentationProduct() {
 </div>
 
 
-    </div>
+    </section>
   );
 }
 export default PresentationProduct;

@@ -1,0 +1,89 @@
+
+.showData {
+    position: relative;
+  }
+  
+  .showData__flag {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .showData__informationAndWorld {
+    width: 100%;
+    height: 1451px;
+    background-color: var(--background-color, #494949);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    z-index: 1;
+    display: flex; 
+    flex-direction: column;
+    position: relative; /* Asegura que el posicionamiento absoluto de .showData__flag funcione dentro de este contenedor */
+  }
+  
+  .showData__information {
+    margin-top: 443px;
+    margin-left: 16.67%;
+    width: 624px;
+  }
+  
+  .showData__information h2 {
+    color: var(--White-Color, #FFF);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; 
+    margin-bottom: 60px;
+  }
+  
+  .newHorizon {
+    color: var(--Secundary-Color, #FFBB95);
+  }
+  
+  .showData__information p {
+    color: var(--White-Color, #FFF);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; 
+    margin-bottom: 60px;
+  }
+  
+  .showData__numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  
+  .number {
+    width: 195px;
+    height: 170px;
+    flex-shrink: 0; 
+    border-radius: 30px;
+    background: #646464;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .number h3 {
+    color: var(--White-Color, #FFBB95);
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; 
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+  
+  .number h4 {
+    color: var(--White-Color, #FFF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+  }
+  

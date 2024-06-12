@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./header.module.css";
 import Link from "next/link";
-import { LogIn } from "../../../../styles/Button__Login";
+import { LogIn } from "../../../../../styles/Button__Login";
 
 export default function Header() {
     return (
@@ -11,11 +11,6 @@ export default function Header() {
             </div>
             <nav className={styles.header__menu}>
                 <ul>
-
-
-
-
-
 
                     <li>
                         <Link href="/solutions">Solutions</Link>
@@ -47,8 +42,6 @@ export default function Header() {
                                         <p className={styles.submenu__description}>Apply for jobs and scholarships in a new country from your country </p>
                                     </div>
                                 </li>
-
-
 
 
 
