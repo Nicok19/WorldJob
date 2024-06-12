@@ -4,9 +4,9 @@ import styles from './backgroundGradient.module.css'; // Asegúrate de que el ar
 
 const BackgroundGradient = ({ children }) => {
   return (
-    <div className={styles.gradientBackground}>
+    <section className={styles.gradientBackground}>
       {children}
-    </div>
+    </section>
   );
 };
 

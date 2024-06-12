@@ -1,12 +1,12 @@
 import style from './solutions.module.css';
 import Image from 'next/image';
-import { SectionTitle } from '../../../../styles/H1__SectionTitle';
-import { WatchMore } from '../../../../styles/Button__WatchMore';
+import { SectionTitle } from '../../../../../styles/H1__SectionTitle';
+import { WatchMore } from '../../../../../styles/Button__WatchMore';
 
  export default function Solutions() {
 
 return(
-<div className={style.generalContainer}>
+<article className={style.generalContainer}>
 <SectionTitle className={style.generalContainer__title}>Solutions</SectionTitle>
 
 
@@ -99,7 +99,7 @@ return(
 
 
 
-</div>
+</article>
 )
 
 }
