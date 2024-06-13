@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Sphere } from '@react-three/drei';
 import { TextureLoader } from 'three'; 
+import * as THREE from 'three';
 import './3d.css';
 
 function WorldSphere() {
