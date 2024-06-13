@@ -1,0 +1,14 @@
+.canvas-container {
+    width: 862px;
+    height: 600px; 
+    margin: 0 auto;
+    position: relative; 
+    top: -710px; 
+    left: 500px;
+  }
+  
+  Canvas {
+padding: 1px;
+box-sizing: content-box;
+  }
+  
