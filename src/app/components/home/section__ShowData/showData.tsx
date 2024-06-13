@@ -1,4 +1,6 @@
 import styles from './showData.module.css';
+import World3D from './world3d';
+
 
 export default function ShowData() {
   return (
@@ -32,7 +34,10 @@ export default function ShowData() {
             </div>
           </div>
         </div>
+        <World3D />
       </div>
+     
+
     </section>
   );
 }
