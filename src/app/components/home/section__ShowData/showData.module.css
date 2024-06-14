@@ -21,7 +21,7 @@
     z-index: 1;
     display: flex; 
     flex-direction: column;
-    position: relative; /* Asegura que el posicionamiento absoluto de .showData__flag funcione dentro de este contenedor */
+    position: relative; 
   }
   
   .showData__information {
