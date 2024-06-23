@@ -1,0 +1,19 @@
+world3d.tsx
+
+This file defines two React components that use the @react-three/fiber library to create a 3D representation of a world.
+
+Imports:
+- React, useRef from 'react': Used to create React components and to access DOM element references.
+- Canvas, useFrame from '@react-three/fiber': Used to create a 3D canvas and to update the canvas on each animation frame.
+- OrbitControls, Sphere from '@react-three/drei': Used to control the camera on the 3D canvas and to create a 3D sphere.
+- TextureLoader from 'three': Used to load textures onto the 3D sphere.
+- * as THREE from 'three': Used to access all exports from the 'three' library.
+- './3d.css': A CSS file is imported for styling the components.
+
+Components:
+
+1. WorldSphere:
+    This component creates a 3D sphere with a world texture. The texture is loaded from the 'world_texture.jpg' file using TextureLoader. The sphere is created with a radius of 3 and 32 width and height segments. The texture is applied to the sphere using meshPhysicalMaterial.
+
+2. World:
+    This is the main component that will be exported and used elsewhere in the application. Currently, this component returns nothing.
