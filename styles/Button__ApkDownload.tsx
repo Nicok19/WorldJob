@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 
-export const DownloadApk= styled.button`
+export const DownloadApk= styled.a`
   /* Estilos base para el botón */
   color: var(--Primary-Color, #5D5FEF);
   text-align: center;
@@ -20,6 +20,7 @@ export const DownloadApk= styled.button`
   flex-shrink: 0;
   border-radius: 25px;
   border: none;
+  background-color: var(--white-color, #fff);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   &:hover {
@@ -37,6 +38,7 @@ export const DownloadApk= styled.button`
     font-size: 25px;
     width: 250px;
     height: 50px;
+    margin: 0 auto;
   }
 `;
 

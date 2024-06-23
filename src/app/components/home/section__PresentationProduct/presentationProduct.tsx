@@ -9,7 +9,8 @@ function PresentationProduct() {
 <div className={styles.container__data}>
     <h1>Live<br></br>Anywhere</h1>
     <p>Worldjob is the first application designed for people who want to emigrate quickly and safely</p>
-    <DownloadApk>Download Apk</DownloadApk>
+    <DownloadApk href="https://www.behance.net/gallery/137845083/Apk-WorldJob" target="_blank" rel="noopener noreferrer">Download</DownloadApk>
+
 </div>
 
 <div className={styles.container__image}>

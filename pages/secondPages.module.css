@@ -93,3 +93,220 @@
 .data__return:hover{
  color: var(--secondary-color, #FFBB95);
 }
+
+
+/*  Responsive design----------------------------------------------------------------------------------------------------------------- */
+
+/*  Laptop */
+
+@media screen and (max-width: 1440px) {
+
+
+    .img {
+        width: 40%;
+    }
+
+    .data{
+        width: 500px;
+    }
+
+    .data__title{
+        font-size: 2.5rem;
+    }
+
+    .data__paragraph{
+        font-size: 1.3rem;
+    }
+
+    .data__return{
+        font-size: 1rem;
+    }
+
+    .img {
+        bottom: 30%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .data{
+        width: 400px;
+    }
+
+    .data__title{
+        font-size: 2rem;
+    }
+
+    .data__paragraph{
+        font-size: 1.2rem;
+    }
+
+    .data__return{
+        font-size: 1rem;
+    }
+
+    .img {
+        bottom: 40%;
+    }
+
+    .img__photo__one {
+        position: absolute; 
+        left: 0;
+        z-index: 1;
+        animation: slideInFromRight 1s ease forwards; 
+    }
+    
+    .img__photo__two {
+     width: 70%;
+    }
+    
+}
+
+/*  Tablet */
+
+@media screen and (max-width: 768px) {
+
+    .generalContainer {
+        height: 75rem; 
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container {
+        align-items: flex-start;
+        justify-content: center;
+        width: 85%;
+    }
+
+    .data{
+        width: 100vw;
+        margin-right: 0rem;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .data__title{
+        font-size: 6vw;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .data__paragraph{
+        font-size: 3vw;
+        text-align: center;
+
+    }
+
+    .data__return{
+        font-size: 3vw;
+        text-align: center;
+        margin-left: 32%;
+    }
+
+
+    .img {
+        display: flex;
+        position: absolute; 
+        justify-content: center;
+        bottom: 10%;
+        width: 30%;
+        right: 45%;
+    }
+
+    .img__photo__one {
+        position: absolute; 
+        left: 0;
+        z-index: 1;
+        animation: slideInFromRight 1s ease forwards; 
+    }
+    
+    .img__photo__two {
+        position: absolute;
+        left: 180px; 
+        transform: translateY(-50%); 
+        opacity: 0; 
+        animation: slideInFromRight 2s ease forwards; 
+    }
+}
+
+/*  Cellphone */
+
+@media screen and (max-width: 480px) {
+
+    .generalContainer {
+        height: 100vh; 
+    }
+
+    .container {
+        align-items: flex-start;
+        justify-content: center;
+        width: 85%;
+        margin: auto;
+    }
+
+    .data{
+        width: 100vw;
+        margin-right: 0rem;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .data__title{
+        font-size: 8vw;
+        text-align: center;
+        margin-bottom: 3rem;
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    .data__paragraph{
+        font-size: 4vw;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .data__return{
+        font-size: 3vw;
+        text-align: center;
+        margin-left: 32%;
+    }
+
+
+    .img {
+        display: flex;
+        position: absolute; 
+        justify-content: center;
+        bottom: 43%;
+        width: 100%;
+        right: 5%; 
+    }
+
+    .img__photo__one {
+        width: 30%;  
+    }
+    
+    .img__photo__two {
+        width: 20vh;
+        height: 40vh;
+    }
+    .img__photo__one {
+        width: 20vh;
+        height: 40vh;
+        left: 130px;
+    }
+
+
+
+}
