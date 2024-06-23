@@ -10,6 +10,7 @@ import Blog from "@/app/components/home/section__Blog/blog";
 import Footer from "@/app/components/shared/footer/footer";
 
 
+
 export default function Home() {
   return (
     <div className={styles.container}>

@@ -11,55 +11,47 @@ export default function Header() {
             </div>
             <nav className={styles.header__menu}>
                 <ul>
-
                     <li>
-                        <Link href="/solutions">Solutions</Link>
+                        <Link href="/SecondPage">Solutions</Link>
                         <div className={styles.header__submenu}>
                             <ul>
                                 <li>
                                     <Image src="/iconChat.png" alt="Chat" width={40} height={40} />
                                     <div>
-                                        <Link href="/solutions/submenu1">Chat</Link>
+                                        <Link href="/SecondPage">Chat</Link>
                                         <p className={styles.submenu__description}>Chat with compatriots</p>
                                     </div>
                                 </li>
-
                                 
                                 <li>
                                     <Image src="/icon-Communities.png" alt="Communities" width={40} height={40} />
                                     <div>
-                                        <Link href="/solutions/submenu2">Communities</Link>
+                                        <Link href="/SecondPage">Communities</Link>
                                         <p className={styles.submenu__description}>Get compatriots in other countrys</p>
                                     </div>
                                 </li>
 
-
-
                                 <li>
                                     <Image src="/icon-work-and-study.png" alt="Work and Study" width={40} height={40} />
                                     <div>
-                                        <Link href="/solutions/submenu3">Work and Study</Link>
-                                        <p className={styles.submenu__description}>Apply for jobs and scholarships in a new country from your country </p>
+                                        <Link href="/SecondPage">Work and Study</Link>
+                                        <p className={styles.submenu__description}>Apply for jobs and scholarships in a new country from your country</p>
                                     </div>
                                 </li>
-
-
 
                                 <li>
                                     <Image src="/icon-mentoring.png" alt="Mentoring" width={40} height={40} />
                                     <div>
-                                        <Link href="/solutions/submenu3">Mentoring</Link>
-                                        <p className={styles.submenu__description}>We help you in your legal procedures </p>
+                                        <Link href="/SecondPage">Mentoring</Link>
+                                        <p className={styles.submenu__description}>We help you in your legal procedures</p>
                                     </div>
                                 </li>
-
-
                             </ul>
                         </div>
                     </li>
-                    <li><Link href="/blog">Blog</Link></li>
-                    <li><Link href="/prices">Prices</Link></li>
-                    <li><Link href="/references">References</Link></li>
+                    <li><Link href="/SecondPage">Blog</Link></li>
+                    <li><Link href="/SecondPage">Prices</Link></li>
+                    <li><Link href="/SecondPage">References</Link></li>
                 </ul>
             </nav>
             <LogIn>Log In</LogIn>

@@ -1,8 +1,12 @@
-// src/app/components/backgroundgradient/backgroundGradient.jsx
-import React from 'react';
-import styles from './backgroundGradient.module.css'; // Asegúrate de que el archivo de estilos esté correctamente importado
+import React from 'react'; // Asegúrate de importar React
+import styles from './backgroundGradient.module.css';
 
-const BackgroundGradient = ({ children }) => {
+// Especifica el tipo de las props del componente, incluyendo `children`
+interface BackgroundGradientProps {
+  children: React.ReactNode;
+}
+
+const BackgroundGradient: React.FC<BackgroundGradientProps> = ({ children }) => {
   return (
     <section className={styles.gradientBackground}>
       {children}
