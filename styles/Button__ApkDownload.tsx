@@ -35,8 +35,8 @@ export const DownloadApk= styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 25px;
-    width: 250px;
+    font-size: 4vw;
+    width: 25vw;
     height: 50px;
     margin: 0 auto;
   }
