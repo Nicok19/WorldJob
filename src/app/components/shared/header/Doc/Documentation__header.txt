@@ -1,0 +1,21 @@
+Header Component Documentation
+
+Overview:
+The Header component is designed to provide a consistent top navigation interface across the website. It includes navigation links to various sections of the site such as the Blog, Prices, and References pages. Additionally, it features a Log In button for user authentication.
+
+Structure:
+- The component is structured as a list within a navigation (`<nav>`) element, ensuring semantic HTML and accessibility.
+- The navigation list (`<ul>`) contains multiple list items (`<li>`), each representing a different section of the website that users can navigate to.
+- Each list item contains a Link component (`<Link>`) which is used for client-side navigation between pages in the application. The [`href`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fc%3A%2FProyectos%20webs%20personales%2FWorldJob%2Fworldjob-web%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Flink.d.ts%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A10%2C%22character%22%3A4%7D%5D "node_modules/next/dist/client/link.d.ts") attribute of each Link component points to the respective path of the pages ("/SecondPage" in this case for Blog, Prices, and References).
+- The Log In button is represented by a custom [`LogIn`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22external%22%3A%22file%3A%2F%2F%2Fc%253A%2FProyectos%2520webs%2520personales%2FWorldJob%2Fworldjob-web%2Fnode_modules%2Fstyled-components%2Fdist%2Ftypes.d.ts%22%2C%22path%22%3A%22%2Fc%3A%2FProyectos%20webs%20personales%2FWorldJob%2Fworldjob-web%2Fnode_modules%2Fstyled-components%2Fdist%2Ftypes.d.ts%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A132%2C%22character%22%3A4%7D%5D "node_modules/styled-components/dist/types.d.ts") component, which presumably handles the authentication process or redirects the user to a login page.
+
+Usage:
+- To integrate the Header component into a page, simply import and include it in the JSX structure of the page component.
+- Ensure that the paths specified in the [`href`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fc%3A%2FProyectos%20webs%20personales%2FWorldJob%2Fworldjob-web%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Flink.d.ts%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A10%2C%22character%22%3A4%7D%5D "node_modules/next/dist/client/link.d.ts") attributes of the Link components are correct and lead to the intended pages.
+- The Log In component should be properly configured to handle user authentication or redirection to a login page.
+
+Note:
+- The current implementation of the Link components uses the same href ("/SecondPage") for Blog, Prices, and References. This should be updated to reflect the correct paths to the respective pages.
+- The Log In component's functionality is not detailed in this excerpt. Ensure that its implementation covers all necessary authentication logic or redirection as required.
+
+This documentation provides a basic overview of the Header component's structure and usage within a web application. For further customization or functionality, consider extending the component or integrating additional logic as needed.
