@@ -86,4 +86,212 @@
     line-height: 25px;
     text-align: center;
   }
+
+  /*Responsive_________________________________________________________________________________________________________________________*/
+
+  /*Laptop*/
+  @media screen and (max-width: 1440px) {
+    .showData__informationAndWorld {
+      height: 1200px;
+    }
+  
+    .showData__information {
+      margin-top: 343px;
+      margin-left: 13%;
+      width: 450px;
+    }
+  
+    .showData__information h2 {
+      font-size: 50px;
+      line-height: 60px; 
+      margin-bottom: 50px;
+    }
+  
+    .showData__information p {
+      font-size: 25px;
+      line-height: 45px; 
+      margin-bottom: 50px;
+    }
+  
+    .showData__numbers {
+      margin-bottom: 50px;
+    }
+  
+    .number {
+      width: 8.7rem;
+      height: 9rem;
+    }
+  
+    .number h3 {
+      font-size: 2rem;
+      line-height: 35px; 
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  
+    .number h4 {
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+
+
+    .showData__informationAndWorld {
+      height: 1200px;
+    }
+  
+    .showData__information {
+      margin-top: 343px;
+      margin-left: 0px;
+      width: 80vw;
+      margin: auto;
+    }
+  
+    .showData__information h2 {
+      font-size: 50px;
+      line-height: 60px; 
+      margin-bottom: 50px;
+    }
+  
+    .showData__information p {
+      font-size: 25px;
+      line-height: 45px; 
+      margin-bottom: 50px;
+    }
+  
+    .showData__numbers {
+      margin-bottom: 50px;
+    }
+  
+    .number {
+      width: 30%;
+      height: 9rem;
+    }
+  
+    .number h3 {
+      font-size: 2.5rem;
+
+    }
+  
+    .number h4 {
+      font-size: 1.3rem;
+      line-height: 25px;
+    }
+  }
+
+    /*Tablet*/
+
+  @media screen and (max-width: 768px) {
+
+
+    .showData__informationAndWorld {
+      height: 1300px;
+    }
+  
+    .showData__information {
+      width: 80vw;
+      margin: auto;
+    }
+  
+    .showData__information h2 {
+      text-align: center;
+      margin-top: 10rem;
+    }
+  
+    .showData__information p {
+    text-align: center;
+    }
+  
+    .showData__numbers {
+      margin-bottom: 50px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .number {
+      width: 100%;
+      height: 138px;
+      display: flex;
+      margin-bottom: 39px;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .number h3 {
+      font-size: 70px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+    }
+  
+    .number h4 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+
+  /*Cellphone*/
+
+  @media screen and (max-width: 468px) {
+
+
+    .showData__flag{
+      display: none;
+    }
+
+    .showData__informationAndWorld {
+      height: 1200px;
+      clip-path: polygon(0 3%, 100% 0, 100% 98%, 0 100%);
+    }
+  
+    .showData__information {
+      width: 80vw;
+      margin: auto;
+    }
+  
+    .showData__information h2 {
+      text-align: center;
+      margin-top: 6rem;
+    }
+  
+    .showData__information p {
+    text-align: center;
+    }
+  
+    .showData__numbers {
+      margin-bottom: 50px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .number {
+      width: 100%;
+      height: 94px;
+      display: flex;
+      margin-bottom: 39px;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .number h3 {
+      font-size: 40px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+    }
+  
+    .number h4 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+
+  
+
   

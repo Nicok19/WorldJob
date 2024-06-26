@@ -288,22 +288,19 @@
         display: flex;
         position: absolute; 
         justify-content: center;
-        bottom: 43%;
+        bottom: 35%;
         width: 100%;
         right: 5%; 
     }
 
-    .img__photo__one {
-        width: 30%;  
-    }
     
     .img__photo__two {
-        width: 20vh;
-        height: 40vh;
+        width: 15vh;
+        height: 30vh;
     }
     .img__photo__one {
-        width: 20vh;
-        height: 40vh;
+        width: 15vh;
+        height: 30vh;
         left: 130px;
     }
 

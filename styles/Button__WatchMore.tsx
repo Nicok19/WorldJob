@@ -22,4 +22,10 @@ export const WatchMore = styled.button`
     background-color: var(--primary-color, #5D5FEF);
     color: var(--white, #fff);
   }
+
+ @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+
+
 `;

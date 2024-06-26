@@ -1,5 +1,5 @@
 .canvas-container {
-    width: 862px;
+    width: 662px;
     height: 600px; 
     margin: 0 auto;
     position: relative; 
@@ -11,4 +11,21 @@
 padding: 1px;
 box-sizing: content-box;
   }
-  
+
+
+  @media screen and (max-width: 1440px) {
+    .canvas-container {
+margin-left: 230px;
+    }
+
+  }
+
+  @media screen and (max-width: 1000px) {
+    .canvas-container {
+display: none;
+    }
+
+  }
+
+
+

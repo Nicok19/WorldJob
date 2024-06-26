@@ -15,7 +15,6 @@
     margin-bottom: 200px;
 }
 
-
 .textAndInfo{
     width: 630px;
 }
@@ -29,6 +28,7 @@ line-height: 70px;
 margin-bottom: 60px;
 }
 
+
 .textAndInfo p{
     font-size: 25px;
     font-style: normal;
@@ -36,7 +36,6 @@ margin-bottom: 60px;
     line-height: 50px; 
     margin-bottom: 60px;
 }
-
 
 
 .icons{
@@ -57,3 +56,226 @@ font-weight: 400;
 line-height: normal;
 }
 
+/*responsive___________________________________________________________________________________________________________________________*/
+
+/*Laptop*/
+
+@media screen and (max-width: 1440px){
+
+
+    .container{
+     margin-bottom: 9rem;
+    }
+    
+
+
+    .generalContainer__title{
+        margin-bottom: 8rem;
+    }
+
+
+    .generalContainer{
+        width: 950px;
+        padding: 0 1rem;
+    }
+
+    .textAndInfo{
+        width: 25rem;
+    }
+
+    .textAndInfo h2{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 50px; 
+        margin-bottom: 2rem;
+        }
+
+        .textAndInfo p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px; 
+            margin-bottom: 2.5rem;
+        }
+        
+        .icons{
+            margin-bottom: 2rem;
+        }
+        
+
+        .icons img{
+            width: 1.3rem;
+            height: 1.3rem;
+            margin-right: 15px;
+        }
+        
+        .icons h3{
+            color: var(--Background-Color, #494949);
+            ;font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            }
+
+        .videoSolutions{
+            width: 300px;
+            height: 331px;
+        }
+        
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .videoSolutions{
+        width: 150px;
+        height: 150px;
+    }
+
+   
+       .generalContainer__title{
+           margin-bottom: 6rem;
+       }
+   
+   
+       .generalContainer{
+           width: 75%;
+           padding: 0 1rem;
+       }
+   
+       .textAndInfo{
+           width: 40vw;
+       }
+   
+       .textAndInfo h2{
+           font-size: 1.5rem;
+           line-height: 30px; 
+
+           }
+   
+           .textAndInfo p{
+               font-size: 15px;
+               font-weight: 400;
+               line-height: 30px; 
+               margin-bottom: 2.5rem;
+           }
+           
+         
+}
+
+
+/*Tablet*/
+
+@media screen and (max-width: 768px){
+
+    .videoSolutions{
+     display: none;
+    }
+
+    .icons{
+        justify-content: center;
+    }
+
+   
+       .generalContainer__title{
+           margin-bottom: 6rem;
+       }
+   
+   
+       .generalContainer{
+           width: 75%;
+           margin: auto;
+           padding: 0 1rem;
+       }
+   
+       .textAndInfo{
+           width: 100vw;
+       }
+   
+       .textAndInfo h2{
+           font-size: 6vw;
+           line-height: 60px; 
+           width: 70vw;
+           text-align: center;
+
+           }
+   
+           .textAndInfo p{
+               font-size: 3vw;
+               font-weight: 400;
+               line-height: 30px; 
+               margin-bottom: 2.5rem;
+               width: 70vw;
+               text-align: center;
+           }
+
+           .icons img{
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        .icons h3{
+            font-size: 1.6rem;
+            }
+           
+         
+}
+
+
+/*Cellphone*/
+
+@media screen and (max-width: 468px){
+
+    .videoSolutions{
+     display: none;
+    }
+
+    .icons{
+        justify-content: center;
+        margin-bottom: 3rem;
+        margin-right: 1.5rem;
+    }
+
+   
+       .generalContainer__title{
+           margin-bottom: 6rem;
+       }
+   
+   
+       .generalContainer{
+           width: 85%;
+           margin: auto;
+           padding: 0 1rem;
+       }
+   
+       .textAndInfo{
+           width: 100vw;
+       }
+   
+       .textAndInfo h2{
+           font-size: 2.2rem;
+           line-height: 45px; 
+           margin-top: 2rem;
+           width: 70vw;
+
+           }
+   
+           .textAndInfo p{
+               font-size: 1.5rem;
+               font-weight: 400;
+               line-height: 40px; 
+               margin-bottom: 2.5rem;
+               width: 70vw;
+               text-align: center;
+           }
+
+           .icons img{
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        .icons h3{
+            font-size: 1.6rem;
+            }
+           
+         
+}
