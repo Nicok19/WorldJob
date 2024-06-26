@@ -6,6 +6,11 @@
 .generalContainer__title{
     margin-top: 200px;
     margin-bottom: 200px;
+    color: var(--Primary-Color, #5D5FEF);
+font-size: 90px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 .container{
@@ -56,6 +61,28 @@ font-weight: 400;
 line-height: normal;
 }
 
+.watchMore{
+    display: flex;
+    width: 199.863px;
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Primary-Color, #5D5FEF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 25px;
+    border: 1px solid var(--Primary-Color, #5D5FEF);
+    background-color: transparent;
+}
+
+.watchMore:hover{
+    background-color: var(--primary-color, #5D5FEF);
+    color: var(--white, #fff);
+}
+
 /*responsive___________________________________________________________________________________________________________________________*/
 
 /*Laptop*/
@@ -71,6 +98,7 @@ line-height: normal;
 
     .generalContainer__title{
         margin-bottom: 8rem;
+        font-size: 60px;
     }
 
 
@@ -178,6 +206,7 @@ line-height: normal;
    
        .generalContainer__title{
            margin-bottom: 6rem;
+           text-align: center;
        }
    
    
@@ -216,7 +245,11 @@ line-height: normal;
         .icons h3{
             font-size: 1.6rem;
             }
-           
+            
+            .watchMore{
+             margin: 0 auto;
+            }
+
          
 }
 
