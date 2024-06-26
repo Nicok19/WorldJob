@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 
 export const DownloadApk= styled.a`
-  /* Estilos base para el botón */
   color: var(--Primary-Color, #5D5FEF);
   text-align: center;
   font-size: 35px;

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./presentationProduct.module.css";
-import { DownloadApk } from "../../../../../styles/Button__ApkDownload";
 
 function PresentationProduct() {
   return (
@@ -9,7 +8,7 @@ function PresentationProduct() {
 <div className={styles.container__data}>
     <h1>Live<br></br>Anywhere</h1>
     <p>Worldjob is the first application designed for people who want to emigrate quickly and safely</p>
-    <DownloadApk href="https://www.behance.net/gallery/137845083/Apk-WorldJob" target="_blank" rel="noopener noreferrer">Download</DownloadApk>
+    <button className={styles.container__data__button}> Download </button>
 
 </div>
 
