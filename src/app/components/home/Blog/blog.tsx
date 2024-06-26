@@ -25,7 +25,6 @@ return(
             </div>
 
             <div className={styles.blog__icon}>
-            <Image src="/blogIconGeneral.png" alt="blog_image" width={18} height={18} />
                 <h4>General</h4>
             </div>
 
@@ -43,7 +42,6 @@ return(
             </div>
 
             <div className={styles.blog__icon}>
-            <Image src="/blogWork.png" alt="work and travel icon" width={18} height={18} />
                 <h4>Work</h4>
             </div>
 
@@ -71,7 +69,6 @@ return(
         </div>
 
         <div className={styles.blog__icon}>
-        <Image src="/blogVisa.png" alt="blog_image" width={18} height={18} />
             <h4>Visa and Working Holiday</h4>
         </div>
 
@@ -89,7 +86,6 @@ return(
         </div>
 
         <div className={styles.blog__icon}>
-        <Image src="/blogWork.png" alt="work and travel icon" width={18} height={18} />
             <h4>Information about compatriots</h4>
         </div>
 
