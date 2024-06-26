@@ -81,10 +81,6 @@
     margin-left: 7px;
 }
 
-.blog__icon img {
-    margin-left: 10px;
-}
-
 .blog__text {
     margin-left: 25px;
 }
@@ -161,10 +157,6 @@
         font-size: 12px;
     }
 
-    .blog__icon img {
-        margin-left: 5px;
-    }
-
     .blog__text h2 {
         font-size: 30px;
     }
@@ -210,13 +202,6 @@
 
     .blog__icon h4 {
         font-size: 12px;
-    }
-
-    .blog__icon img {
-        margin-left: 5px;
-        width: 10px;
-        height: 10px;
-
     }
 
     .blog__text h2 {
