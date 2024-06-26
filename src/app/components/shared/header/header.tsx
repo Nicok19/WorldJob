@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./header.module.css";
-import { LogIn } from "../../../../../styles/Button__Login";
+
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,7 +67,7 @@ export default function Header() {
                 </ul>
             </nav>
          
-            <LogIn>Log In</LogIn>
+            <button className={styles.header__login}>Log In</button>
         </header>
     );
 }
