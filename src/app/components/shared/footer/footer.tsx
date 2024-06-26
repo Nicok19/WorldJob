@@ -51,7 +51,7 @@ export default function Footer() {
         <div className={styles.footer__content}>
           <div className={`${styles.footer__row} ${styles.footer__logo}`}>
             <Image src="/worldjob-logo.png" alt="logo" width={253} height={63} />
-            <h3>© All rights reserved</h3>
+            <h3 className={styles.footer__rights}>© All rights reserved</h3>
           </div>
           {footerRows.map((row, index) => (
             <div className={`${styles.footer__row}`} key={index}>

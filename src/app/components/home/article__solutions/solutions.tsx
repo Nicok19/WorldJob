@@ -25,7 +25,7 @@ return(
 <WatchMore>Watch more</WatchMore>
 </div>
 
-<video width="400" height="431" autoPlay muted playsInline>
+<video className={style.videoSolutions} width="400" height="431" autoPlay muted playsInline>
   <source src="chat2.mp4" type="video/mp4" />
 </video>
 </div>
@@ -46,7 +46,7 @@ return(
 <WatchMore>Watch more</WatchMore>
 </div>
 
-<video width="400" height="431" autoPlay muted playsInline>
+<video className={style.videoSolutions} width="400" height="431" autoPlay muted playsInline>
   <source src="pals.mp4" type="video/mp4" />
 </video>
 </div>
@@ -67,7 +67,7 @@ return(
 <WatchMore>Watch more</WatchMore>
 </div>
 
-<video width="400" height="431" autoPlay muted playsInline>
+<video className={style.videoSolutions} width="400" height="431" autoPlay muted playsInline>
   <source src="workAndStudy2.mp4" type="video/mp4"/>
 </video>
 </div>
@@ -89,7 +89,7 @@ return(
 <WatchMore>Watch more</WatchMore>
 </div>
 
-<video width="400" height="431" autoPlay muted playsInline>
+<video className={style.videoSolutions} width="400" height="431" autoPlay muted playsInline>
   <source src="plane.mp4" type="video/mp4"/>
 </video>
 </div>

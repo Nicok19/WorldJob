@@ -129,3 +129,145 @@
     transition: 0.5s;
     border: none;
 }
+
+/*Laptop*/
+
+@media screen and (max-width: 1440px) {
+   
+    .container {
+        width: 950px;
+    }
+
+    .container__title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 50px;
+    }
+
+    .blog {
+        width: 450px;
+    }
+
+    .blog__image {
+        height: 220px;
+    }
+
+    .blog__icon {
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    .blog__icon h4 {
+        font-size: 12px;
+    }
+
+    .blog__icon img {
+        margin-left: 5px;
+    }
+
+    .blog__text h2 {
+        font-size: 30px;
+    }
+
+    .blog__text h3 {
+        font-size: 12px;
+    }
+
+    .button__watchMore {
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .container__title {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 50px;
+    }
+
+    .blog {
+        width: 350px;
+    }
+
+    .blog__image {
+        height: 220px;
+    }
+
+    .blog__icon {
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    .blog__icon h4 {
+        font-size: 12px;
+    }
+
+    .blog__icon img {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+
+    }
+
+    .blog__text h2 {
+        font-size: 25px;
+    }
+
+    .blog__text h3 {
+        font-size: 12px;
+    }
+
+    .button__watchMore {
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
+
+/*Tablet*/
+
+@media screen and (max-width: 768px) {
+
+
+    .container {
+        width: 600px;
+    }
+
+    .blog {
+        width: 300px;
+    }
+
+    .blog__text h2 {
+        font-size: 20px;
+    }
+
+}
+
+/*Cellphone*/
+@media screen and (max-width: 468px) {
+
+    .allContainers {
+        flex-direction:column-reverse;
+        padding-top: 0px;
+        height: 1870px;
+   
+    }
+  
+    .container {
+        width: 80vw;
+        margin: auto;
+        margin-top: 75px;
+    }
+
+}

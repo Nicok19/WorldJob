@@ -24,9 +24,9 @@
   margin-top: 220px;
 }
 
-.footer__row h3 {
+.footer__rights {
   color: var(--White-Color, #FFF);
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -80,4 +80,109 @@
   font-style: normal;
   font-weight: 600;
   margin-top: 200px;
+}
+
+
+/*Responsive___________________________________________________________________________________________________________________________*/
+
+
+/*Laptop*/
+
+@media screen and (max-width: 1440px) {
+ 
+
+  .footer__container {
+    width: 950px;
+    margin: auto;
+  }
+
+  .footer__rights {
+    font-size: 15px;
+  }
+}
+
+/*Tablet*/
+
+@media screen and (max-width: 768px) {
+ 
+
+  .footer__container {
+    width: 85%;
+    margin: auto;
+  }
+
+  .footer__rights {
+    font-size: 15px;
+  }
+
+  .footer__title{
+    font-size: 20px;
+  }
+
+  .footer__logo img {
+    max-width: 70%;
+
+  }
+  
+.footer__item {
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 13px;
+}
+}
+
+/*Cellphone*/
+
+@media screen and (max-width: 468px) {
+
+  .footer {
+    height: 100%;
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+    margin-top: 150px;
+  }
+
+  .footer__content {
+    max-width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__row {
+    width: 100%;
+    margin-top: 90px;
+  }
+
+  .footer__item {
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .footer__title{
+    font-size: 20px;
+    text-align: center;
+  }
+
+   .footer__rights{
+    width: 150px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin: auto;
+
+   }
+  .footer__logo img {
+    margin: auto;
+  }
+
+  .footer__author h3 {
+    margin-top: 50px;
+  }
+
+
+
+
+
+
 }

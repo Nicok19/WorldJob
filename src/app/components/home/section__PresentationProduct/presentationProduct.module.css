@@ -97,61 +97,42 @@
 /*Tablet*/
 @media screen and (max-width: 768px){
     .container{
-    width: 80%;
+    width: 100vw;
+    flex-direction: column;
     }
     
     .container__data{
-        width: 30vw;
+        width: 900px;
     }
     
     .container__data h1{
-        color: var(--White-Color, #FFF);
-        font-size: 5vw;
+         font-size: 3rem;
         line-height: 50px; 
         margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
     }
     
     .container__data p{
-        font-size: 12px;
-    }
-
-    .container__image img{
-        width: 30vw;
-        height: 40vw;
-
-    }
-}
-
-
-
-/*Tablet*/
-@media screen and (max-width: 768px){
-    .container{
-    width: 80vw;
-    }
-    
-    .container__data{
-        width: 30vw;
-    }
-    
-    .container__data h1{
-        color: var(--White-Color, #FFF);
-        font-size: 5vw;
-        line-height: 50px; 
-        margin-bottom: 10px;
+        font-size: 1rem;
+        text-align: center;
+        width: 50%;
         margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
-    
-    .container__data p{
-        font-size: 12px;
+    .container__image{
+    padding-top: 2rem;
+  
     }
-
     .container__image img{
         width: 30vw;
         height: 40vw;
 
     }
 }
+
+
 
 
 /*cellphone*/
