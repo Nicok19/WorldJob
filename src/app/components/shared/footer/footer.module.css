@@ -131,9 +131,10 @@
 }
 }
 
+
 /*Cellphone*/
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 600px) {
 
   .footer {
     height: 100%;

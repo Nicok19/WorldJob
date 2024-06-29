@@ -8,7 +8,7 @@ export default function ShowData() {
       <div className={styles.showData__informationAndWorld}>
         <div className={styles.showData__flag}>
           <svg xmlns="http://www.w3.org/2000/svg" width="384" height="102" viewBox="0 0 384 102" fill="none">
-            <path d="M384 0.5L-93.5 34V102L384 68V0.5Z" fill="#ABCDFF" />
+            <path d="M384 0.5L-93.5 34V102L384 68V0.5Z" fill="#5D5FEF" />
           </svg>
         </div>
 
