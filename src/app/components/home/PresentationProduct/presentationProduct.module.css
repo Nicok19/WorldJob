@@ -202,7 +202,7 @@
         line-height: 50px; 
         margin: 0px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     
     .container__data p{
@@ -215,6 +215,11 @@
         width: 70%;
         height: 70%;
         margin-left: 2.5rem;
+    }
 
+
+    .container__data__button{
+        width: 50vw;
+        font-size: 1.4rem;
     }
 }

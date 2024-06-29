@@ -6,8 +6,8 @@ import BackgroundGradient from "@/app/components/home/backgroundGradient/backgro
 import PresentationProduct from "@/app/components/home/PresentationProduct/presentationProduct";
 import Solutions from "@/app/components/home/Solutions/solutions";
 import ShowData from "@/app/components/home/ShowData/showData";
-import Blog from "@/app/components/home/Blog/blog";
 import Footer from "@/app/components/shared/footer/footer";
+import WorldjobVideo from "@/app/components/home/VideoPresentation/video";
 
 
 
@@ -18,9 +18,12 @@ export default function Home() {
         <Header />
         <PresentationProduct />
       </BackgroundGradient>
-      <Solutions />
+
+      <WorldjobVideo />
+  
       <ShowData />
-      <Blog/>
+      <Solutions />
+
       <Footer />
     </div>
   );
