@@ -9,7 +9,7 @@ const WorldjobVideo: React.FC = () => {
       <video src="./PromotionWorldjob.mp4" controls poster="./worldjobTemplate.jpg"></video>
       </div>
       <div className={styles.information}>
-        <h2 className={styles.information__title}>Watch the UX/UI Proyect</h2>
+        <h2 className={styles.information__title}>Watch the UX/UI Project</h2>
         <p className={styles.information__paragraph}>
         Worldjob is a personal project that I created to showcase my skills as both a front-end developer and a UX/UI designer. If you want to see the UX/UI development, I invite you to click on the following button.</p>
 
