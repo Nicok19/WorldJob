@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./header.module.css";
 
-
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,47 +26,47 @@ export default function Header() {
             <nav className={`${styles.header__menu} ${isMenuOpen ? styles.menu__open : ""}`}>
                 <ul>
                     <li>
-                        <Link href="/SecondPage">Solutions</Link>
+                        <Link href="/SecondPage/SecondPage">Solutions</Link>
                         <div className={styles.header__submenu}>
                             <ul>
                                 <li>
                                     <Image src="/iconChat.png" alt="Chat" width={40} height={40} />
                                     <div>
-                                        <Link href="/SecondPage">Chat</Link>
+                                        <Link href="/SecondPage/SecondPage">Chat</Link>
                                         <p className={styles.submenu__description}>Chat with compatriots</p>
                                     </div>
                                 </li>
                                 <li>
                                     <Image src="/icon-Communities.png" alt="Communities" width={40} height={40} />
                                     <div>
-                                        <Link href="/SecondPage">Communities</Link>
+                                        <Link href="/SecondPage/SecondPage">Communities</Link>
                                         <p className={styles.submenu__description}>Get compatriots in other countries</p>
                                     </div>
                                 </li>
                                 <li>
                                     <Image src="/icon-work-and-study.png" alt="Work and Study" width={40} height={40} />
                                     <div>
-                                        <Link href="/SecondPage">Work and Study</Link>
+                                        <Link href="/SecondPage/SecondPage">Work and Study</Link>
                                         <p className={styles.submenu__description}>Apply for jobs and scholarships in a new country from your country</p>
                                     </div>
                                 </li>
                                 <li>
                                     <Image src="/icon-mentoring.png" alt="Mentoring" width={40} height={40} />
                                     <div>
-                                        <Link href="/SecondPage">Mentoring</Link>
+                                        <Link href="/SecondPage/SecondPage">Mentoring</Link>
                                         <p className={styles.submenu__description}>We help you in your legal procedures</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li><Link href="/SecondPage">Blog</Link></li>
-                    <li><Link href="/SecondPage">Prices</Link></li>
-                    <li><Link href="/SecondPage">References</Link></li>
+                    <li><Link href="/SecondPage/SecondPage">Blog</Link></li>
+                    <li><Link href="/SecondPage/SecondPage">Prices</Link></li>
+                    <li><Link href="/SecondPage/SecondPage">References</Link></li>
                 </ul>
             </nav>
-         
             <button className={styles.header__login}>Log In</button>
         </header>
     );
 }
+
