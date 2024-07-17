@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, act } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import World from '../World3d';
+import '@testing-library/jest-dom';
+import World from '../world3d';
 
 // Mock @react-three/fiber and @react-three/drei components
 jest.mock('@react-three/fiber', () => ({
