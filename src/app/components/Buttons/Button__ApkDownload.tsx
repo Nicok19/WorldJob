@@ -1,9 +1,9 @@
-"use client"
+"use client";
+
 
 import styled from 'styled-components';
 
-
-export const DownloadApk= styled.a`
+ const DownloadApk = styled.a`
   color: var(--Primary-Color, #5D5FEF);
   text-align: center;
   font-size: 35px;
@@ -40,5 +40,9 @@ export const DownloadApk= styled.a`
     margin: 0 auto;
   }
 `;
+
+export default DownloadApk;
+
+
 
 
