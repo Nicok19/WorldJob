@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import style from './secondPages.module.css';
-import '../styles/globals.css';
-import { DownloadApk } from '../styles/Button__ApkDownload';
+import '../../styles/globals.css';
+import { DownloadApk } from '../../styles/Button__ApkDownload';
 
 
 
