@@ -6,7 +6,7 @@ const WorldjobVideo: React.FC = () => {
 
     <section id="about" className={styles.container}>
       <div className={styles.video}>
-      <video src="./https://imgur.com/LNby0zH.mp4" controls poster="./worldjobTemplate.jpg"></video>
+      <video src="https://imgur.com/tfXHKp5.mp4" controls poster="./worldjobTemplate.jpg"></video>
       </div>
       <div className={styles.information}>
         <h2 className={styles.information__title}>About WorldJob</h2>

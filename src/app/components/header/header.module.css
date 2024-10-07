@@ -101,6 +101,16 @@
   line-height: normal;
 }
 
+.close__icon {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  z-index: 20; 
+  cursor: pointer; 
+  width: 40px;
+  height: 40px;
+}
+
 
 /* Responsive styles__________________________________________________________________________________________________________________ */
 
