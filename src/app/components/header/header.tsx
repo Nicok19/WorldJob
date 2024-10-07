@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./header.module.css";
@@ -10,63 +10,62 @@ export default function Header() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleResize = () => {
+        // Cierra el menú si está abierto cuando el tamaño de la ventana cambia
+        if (isMenuOpen) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize);
+        
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, [isMenuOpen]);
+
     return (
         <header className={styles.header}>
-            <div className={styles.header__logo}>
-                <Image src="/worldjob-logo.png" alt="logo" width={142} height={52} />
+            <div className={styles.header__content}>
+                <div className={styles.header__logo}>
+                    <Image src="/worldjob-logo.png" alt="logo" width={142} height={52} />
+                </div>
+                <div 
+                    className={`${styles.header__hamburger} ${isMenuOpen ? styles.menu__open : ""}`} 
+                    onClick={toggleMenu}
+                >
+                    {isMenuOpen ? (
+                        <span className={styles.close__icon}>✕</span> // Ícono de cruz para cerrar
+                    ) : (
+                        <>
+                            <span className={styles.hamburger__line}></span>
+                            <span className={styles.hamburger__line}></span>
+                            <span className={styles.hamburger__line}></span>
+                        </>
+                    )}
+                </div>
+                <nav className={`${styles.header__menu} ${isMenuOpen ? styles.menu__open : ""}`}>
+                    <ul>
+                        <li>
+                            <Link href="#about">About Us</Link>
+                        </li>
+                        <li>
+                            <Link href="#data">Data</Link>
+                        </li>
+                        <li>
+                            <Link href="#solutions">Solutions</Link>
+                        </li>
+                    </ul>
+                </nav>
+                <div className={styles.header__platforms}>
+                    <h2 className={styles.header__title}>Available in</h2>
+                    <div className={styles.platforms__img}>
+                        <Image src="/ios.png" alt="app store" width={50} height={50} />
+                        <Image src="/playstore.png" alt="google play" width={50} height={50} />
+                    </div>
+                </div>
             </div>
-            <div 
-                className={`${styles.header__hamburger} ${isMenuOpen ? styles.menu__open : ""}`} 
-                onClick={toggleMenu}
-            >
-                <span className={styles.hamburger__line}></span>
-                <span className={styles.hamburger__line}></span>
-                <span className={styles.hamburger__line}></span>
-            </div>
-            <nav className={`${styles.header__menu} ${isMenuOpen ? styles.menu__open : ""}`}>
-                <ul>
-                    <li>
-                        <Link href="/SecondPage/SecondPage">Solutions</Link>
-                        <div className={styles.header__submenu}>
-                            <ul>
-                                <li>
-                                    <Image src="/iconChat.png" alt="Chat" width={40} height={40} />
-                                    <div>
-                                        <Link href="/SecondPage/SecondPage">Chat</Link>
-                                        <p className={styles.submenu__description}>Chat with compatriots</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <Image src="/icon-Communities.png" alt="Communities" width={40} height={40} />
-                                    <div>
-                                        <Link href="/SecondPage/SecondPage">Communities</Link>
-                                        <p className={styles.submenu__description}>Get compatriots in other countries</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <Image src="/icon-work-and-study.png" alt="Work and Study" width={40} height={40} />
-                                    <div>
-                                        <Link href="/SecondPage/SecondPage">Work and Study</Link>
-                                        <p className={styles.submenu__description}>Apply for jobs and scholarships in a new country from your country</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <Image src="/icon-mentoring.png" alt="Mentoring" width={40} height={40} />
-                                    <div>
-                                        <Link href="/SecondPage/SecondPage">Mentoring</Link>
-                                        <p className={styles.submenu__description}>We help you in your legal procedures</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><Link href="/SecondPage/SecondPage">Blog</Link></li>
-                    <li><Link href="/SecondPage/SecondPage">Prices</Link></li>
-                    <li><Link href="/SecondPage/SecondPage">References</Link></li>
-                </ul>
-            </nav>
-            <button className={styles.header__login}>Log In</button>
         </header>
     );
 }
-

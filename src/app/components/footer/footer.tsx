@@ -13,11 +13,6 @@ export default function Footer() {
         { name: "Careers", link: "/careers" },
         { name: "Partners", link: "/partners" },
         { name: "Terms of Service", link: "/terms-of-service" },
-        { name: "Privacy Policy", link: "/privacy-policy" },
-        { name: "Contact", link: "/contact" },
-        { name: "FAQ", link: "/faq" },
-        { name: "Support", link: "/support" },
-        { name: "Site Map", link: "/site-map" }
       ]
     },
     {
@@ -40,7 +35,6 @@ export default function Footer() {
         { name: "Clients", link: "/clients" },
         { name: "Contact Us", link: "/contact-us" },
         { name: "Terms & Conditions", link: "/terms-and-conditions" },
-        { name: "Refund Policy", link: "/refund-policy" }
       ]
     }
   ];
@@ -65,10 +59,8 @@ export default function Footer() {
               </ul>
             </div>
           ))}
-          <div className={styles.footer__author}>
-            <h3>Subscribe to our newsletter for the latest updates and offers.</h3>
-          </div>
         </div>
+        <p className={styles.footer__author}>This website was made by Nicolás Bertinat.</p>
       </div>
     </footer>
   );

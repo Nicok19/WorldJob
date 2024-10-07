@@ -20,3 +20,7 @@ body {
   --white-color: #fff;
   --border-radius: 8px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
