@@ -1,12 +1,22 @@
 /* Header Styles */
 .header {
-  width: 1280px;
+  width: 100vw;
+}
+
+.header__content {
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  position: relative; 
+  padding: 10px 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #494949;
+  z-index: 100000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .header__hamburger {
@@ -17,6 +27,7 @@
   height: 21px;
   cursor: pointer;
 }
+
 
 .hamburger__line {
   width: 100%;
@@ -30,10 +41,9 @@
 
 .header__menu {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  width: 551px;
-  position: relative; 
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .header__menu ul {
@@ -44,17 +54,16 @@
 }
 
 .header__menu li {
-  position: relative; 
-  margin-right: 20px; 
+  position: relative;
+  margin-right: 20px;
 }
 
 .header__menu li a {
   color: var(--White-Color, #FFF);
-  font-size: 22px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-right: 77px;
 }
 
 .header__menu ul li a:nth-child(4) {
@@ -73,110 +82,22 @@
   margin-right: 0;
 }
 
-/* Submenu */
-.header__submenu {
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 100%; 
-  left: 0;
-  background-color: var(--white-color, #fff);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
-  z-index: 1;
-  width: 386px; 
-  padding: 10px; 
-  border-radius: 30px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.header__menu li:hover .header__submenu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.header__submenu ul {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.header__submenu li:hover {
-  opacity: 0.4;
-}
-
-.header__submenu li {
-  padding: 10px 0;
+.header__platforms {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 28px;
-  margin-left: 25px;
+  width: 30vw;
 }
 
-.header__submenu li img {
-  margin-right: 10px;
-  width: 40px; 
-  height: 40px; 
-  border-radius: 50%; 
-  margin-right: 23px;
-}
-
-.header__submenu li div {
-  display: flex;
-  flex-direction: column;
-}
-
-.header__submenu li a {
-  color: var(--Primary-Color, #5D5FEF); 
+.header__title {
+  color: var(--White-Color, #FFF);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 7px;
 }
-
-.submenu__description {
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.header__submenu li a:hover {
-  color: black;
-}
-
-.header__login{
-  width: 185.283px;
-height: 38.67px;
-flex-shrink: 0;
-color: var(--White-Color, #FFF);
-font-size: 22px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: transparent;
-border: 1px solid var(--White-Color, #FFF);
-border-radius: 25px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.header__login:hover{
-  background-color: var(--primary-color, #5D5FEF);
-}
-
-
-
-
 
 /* Responsive styles__________________________________________________________________________________________________________________ */
-
 
 /* Laptop */
 @media (max-width: 1440px) {
@@ -196,46 +117,14 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .header__menu li a {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 50px;
   }
 
   .header__menu ul li a:nth-child(4) {
     margin-right: 0px;
   }
-
-  .header__submenu {
-    width: 400px;
-    padding-left: 2rem;
-  }
-
-  .header__submenu li {
-    margin-left: 0;
-  }
-
-  .header__submenu li img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .header__submenu li a {
-    font-size: 18px;
-  }
-
-  .submenu__description {
-    font-size: 13px;
-  }
-
-  .header__login{
-    font-size: 30px;
-    width: 100px;
-    height: 40px;
-    font-size: 20px;
 }
-
-}
-
-
 
 @media (max-width: 1000px) {
   .header li {
@@ -245,8 +134,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .header__menu ul li a {
-    font-size: 14px;
-    margin-right: 0px;
+    font-size: 15px;
   }
 
   .header__logo img {
@@ -255,14 +143,21 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-top: 1rem;
   }
 
-  .header__login{
-    font-size: 30px;
-    width: 80px;
-    height: 30px;
+  .header__platforms {
+    display: hidden;
+  }
+
+  .header__title {
     font-size: 15px;
-}
+  }
 
-
+  .header__platforms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+  }
+  
 }
 
 /* Tablet */
@@ -271,6 +166,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 100%;
     padding: 0 20px;
   }
+  
 
   .header__hamburger {
     display: flex;
@@ -281,21 +177,25 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     overflow: hidden;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100vh; /* Cambiado para ocupar el 100% del alto */
     background-color: #fff;
     z-index: 10;
     transition: max-height 0.5s ease-in-out;
   }
 
   .header__menu.menu__open {
-    max-height: 500px; 
+    max-height: 100vh;
   }
 
   .header__menu ul {
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
   }
+  
 
   .header__menu li {
     margin: 10px 0;
@@ -314,7 +214,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 0;
     width: 100%;
     opacity: 1;
-    visibility: visible; 
+    visibility: visible;
   }
 
   .submenu__description {
@@ -350,6 +250,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   .header__logo img {
     margin-top: 1rem;
   }
+
   .header__submenu img {
     display: none;
   }
@@ -368,29 +269,35 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 200px;
   }
 
+  .header__title {
+    display: none;
+  }
 }
 
-/* cellphone */
+/* Celular */
 @media (max-width: 480px) {
+  .header__content {
+    padding: 10px 20px;
+  }
+
   .header__menu {
     padding-left: 1rem;
   }
 
-  .header__submenu img {
-    display: none;
+  .header__menu ul li {
+    width: 100vw;
   }
 
-  .header__submenu ul {
-    height: 150px;
+  .header__menu ul li a {
+    font-size: 24px;
+    margin-right: 0px;
   }
 
-  .header__submenu ul li {
-    line-height: normal;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header__submenu ul li a {
-    width: 200px;
+  .header__menu .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
   }
 }

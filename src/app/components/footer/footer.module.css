@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   background-color: var(--background-color, #494949);
-  height: 1000px;
+  height: 800px;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
   margin-top: 150px;
 }
@@ -80,6 +80,14 @@
   font-style: normal;
   font-weight: 600;
   margin-top: 200px;
+}
+
+.footer__author{
+text-align: center;
+color: white;
+font-weight: 600;
+padding-top: 80px;
+font-size: 17px
 }
 
 

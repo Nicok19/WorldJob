@@ -4,16 +4,16 @@ import styles from './video.module.css';
 const WorldjobVideo: React.FC = () => {
   return (
 
-    <section className={styles.container}>
+    <section id="about" className={styles.container}>
       <div className={styles.video}>
-      <video src="./PromotionWorldjob.mp4" controls poster="./worldjobTemplate.jpg"></video>
+      <video src="./https://imgur.com/LNby0zH.mp4" controls poster="./worldjobTemplate.jpg"></video>
       </div>
       <div className={styles.information}>
-        <h2 className={styles.information__title}>Watch the UX/UI Project</h2>
+        <h2 className={styles.information__title}>About WorldJob</h2>
         <p className={styles.information__paragraph}>
-        Worldjob is a personal project that I created to showcase my skills as both a front-end developer and a UX/UI designer. If you want to see the UX/UI development, I invite you to click on the following button.</p>
+        Worldjob is an application that will help you emigrate to a new country by connecting you with compatriots living in your destination and assisting you in finding jobs or scholarships.</p>
 
-        <a  href="https://www.behance.net/gallery/137845083/Apk-WorldJob" target="_blank" className={styles.information__button}>View project</a>
+        <a  href="https://support.google.com/googleplay/?hl=es&sjid=1793490182847360166-SA#topic=3364260" target="_blank" className={styles.information__button}>Download</a>
 
 
       </div>

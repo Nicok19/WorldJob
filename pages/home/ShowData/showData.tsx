@@ -4,7 +4,7 @@ import World3D from './world3d';
 
 export default function ShowData() {
   return (
-    <section className={styles.showData}>
+    <section id="data" className={styles.showData}>
       <div className={styles.showData__informationAndWorld}>
         <div className={styles.showData__flag}>
           <svg xmlns="http://www.w3.org/2000/svg" width="384" height="102" viewBox="0 0 384 102" fill="none">

@@ -14,8 +14,8 @@ import WorldjobVideo from "./home/VideoPresentation/video";
 export default function Home() {
   return (
     <div className={styles.container}>
+       <Header />
       <BackgroundGradient>
-        <Header />
         <PresentationProduct />
       </BackgroundGradient>
 
