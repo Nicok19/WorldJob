@@ -8,7 +8,6 @@ export default function Header() {
     const [viewportWidth, setViewportWidth] = useState(0);
 
     useEffect(() => {
-        // Configurar el ancho del viewport al montarse el componente
         setViewportWidth(window.innerWidth);
 
         const handleResize = () => {
@@ -24,24 +23,21 @@ export default function Header() {
         // Agregar el listener de resize
         window.addEventListener("resize", handleResize);
         
-        // Limpiar el listener al desmontar el componente
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, [isMenuOpen]); // Asegúrate de incluir isMenuOpen en las dependencias
+    }, [isMenuOpen]);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // Cerrar el menú al hacer clic en un link
     const handleLinkClick = () => {
         if (isMenuOpen) {
             setIsMenuOpen(false);
         }
     };
 
-    // Función para desplazar hacia arriba
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
@@ -58,7 +54,7 @@ export default function Header() {
                 >
                     {isMenuOpen ? (
                         <span className={styles.close__icon}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#5D5FEF" viewBox="0 0 24 24"> {/* Cambié el color a rojo para depuración */}
                                 <path d="M19.5 6.5l-1.4-1.4-6.1 6.1-6.1-6.1L5.5 6.5 11.6 12 5.5 17.5l1.4 1.4 6.1-6.1 6.1 6.1 1.4-1.4-6.1-6.1z"/>
                             </svg>
                         </span>
@@ -94,4 +90,3 @@ export default function Header() {
         </header>
     );
 }
-
