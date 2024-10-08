@@ -1,18 +1,17 @@
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1280vw;
     margin: auto;
     padding-top: 150px;
-
 }
 
-.container__data{
+.container__data {
     width: 413px;
 }
 
-.container__data h1{
+.container__data h1 {
     color: var(--White-Color, #FFF);
     font-size: 85px;
     font-style: normal;
@@ -21,7 +20,7 @@
     margin-bottom: 40px;
 }
 
-.container__data p{
+.container__data p {
     color: var(--White-Color, #FFF);
     font-size: 28px;
     font-style: normal;
@@ -30,197 +29,174 @@
     margin-bottom: 50px;
 }
 
-.container__data__button{
-    color: var(--Primary-Color, #5D5FEF);
-    text-align: center;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.container__data__button {
     display: flex;
-    width: 370.563px;
-    height: 67.109px;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    border-radius: 25px;
-    border: none;
-    background-color: var(--white-color, #fff);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-content: center;
+    background-color: #494949;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px; /* Consistencia vertical */
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out; /* Transición suave */
 }
 
-.container__data__button:hover{
-    background-color: var(--background-color, #494949);
-    color: var(--white-color, #fff);
-  }
+.container__data__button:hover {
+    background-color: #5d5fef;
+}
 
+.container__data__button a {
+    color: #FFF;
+    font-size: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+}
 
 /*Responsive Area----------------------------------------------------------------------------------------------------------------*/
 
 /*laptop*/
 
-@media screen and (max-width: 1440px){
-    .container{
-    width: 950px;
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 950px;
     }
-    
-    .container__data{
+
+    .container__data {
         width: 300px;
     }
-    
-    .container__data h1{
+
+    .container__data h1 {
         color: var(--White-Color, #FFF);
         font-size: 60px;
-        line-height: 60px; 
+        line-height: 60px;
     }
-    
-    .container__data p{
+
+    .container__data p {
         color: var(--White-Color, #FFF);
         font-size: 18px;
     }
 
-    .container__image img{
+    .container__image img {
         width: 451px;
         height: 550px;
         padding-bottom: 40px;
     }
-
-    .container__data__button{
-        font-size: 30px;
-        width: 300px;
-        height: 60px;
-
-    }
-
-
-
 }
 
-
-@media screen and (max-width: 1000px){
-    .container{
-    width: 700px;
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 700px;
     }
-    
-    .container__data{
+
+    .container__data {
         width: 300px;
         margin-right: 90px;
     }
-    
-    .container__data h1{
+
+    .container__data h1 {
         font-size: 50px;
-        line-height: 55px; 
+        line-height: 55px;
     }
-    
-    .container__data p{
+
+    .container__data p {
         font-size: 15px;
     }
 
-    .container__image img{
+    .container__image img {
         width: 80%;
         height: 80%;
-
     }
 }
 
-
-
-
-
 /*Tablet*/
-@media screen and (max-width: 768px){
-    .container{
-    width: 100vw;
-    flex-direction: column;
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100vw;
+        flex-direction: column;
     }
-    
-    .container__data{
+
+    .container__data {
         margin: auto;
         justify-content: center;
         align-items: center;
     }
-    
-    .container__data h1{
-         font-size: 3rem;
-        line-height: 50px; 
+
+    .container__data h1 {
+        font-size: 3rem;
+        line-height: 50px;
         margin: 0px;
         text-align: center;
     }
-    
-    .container__data p{
+
+    .container__data p {
         font-size: 1rem;
         padding-bottom: 3rem;
         padding-top: 2rem;
         text-align: center;
-        margin: auto;
         margin: 0px;
- 
     }
-    .container__image{
-    padding-top: 2rem;
-  
+
+    .container__image {
+        padding-top: 2rem;
     }
-    .container__image img{
+
+    .container__image img {
         width: 30vw;
         height: 40vw;
     }
-    .container__data__button{
-        font-size: 4vw;
-        width: 25vw;
+
+    .container__data__button {
+        font-size: 4vw; 
+        width: 40vw;
         height: 50px;
         margin: 0 auto;
+        margin-top: 10px;
     }
-
-
 }
 
+/*Cellphone*/
 
-
-
-/*cellphone*/
-@media screen and (max-width: 486px){
-    .container{
-    width: 80%;
-    margin-top: 50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding-top: 120px;
-  
+@media screen and (max-width: 486px) {
+    .container {
+        width: 80%;
+        margin-top: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-top: 120px;
     }
-    
-    .container__data{
+
+    .container__data {
         width: 90%;
         justify-content: center;
         align-items: center;
     }
-    
-    .container__data h1{
+
+    .container__data h1 {
         color: var(--White-Color, #FFF);
         font-size: 3rem;
-        line-height: 50px; 
+        line-height: 50px;
         margin: 0px;
         text-align: center;
         margin-bottom: 0px;
     }
-    
-    .container__data p{
+
+    .container__data p {
         font-size: 12px;
         text-align: center;
     }
 
-    .container__image img{
+    .container__image img {
         margin-top: 40px;
         width: 70%;
         height: 70%;
         margin-left: 2.5rem;
     }
 
-
-    .container__data__button{
+    .container__data__button {
         width: 50vw;
-        font-size: 1.4rem;
+        font-size: 1.4rem; /* Tamaño adecuado para móviles */
     }
 }
