@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   background-color: #494949;
-  z-index: 100000;
+  z-index: 100;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -29,9 +29,6 @@
   
 }
 
-.header__hamburger{
-  margin-left: 15vw;
-}
 
 .hamburger__line {
   width: 100%;
@@ -64,7 +61,7 @@
 
 .header__menu li a {
   color: var(--White-Color, #FFF);
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -90,7 +87,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 30vw;
+  width: 20vw;
 }
 
 .header__title {
@@ -139,6 +136,11 @@
   .header__menu ul li a:nth-child(4) {
     margin-right: 0px;
   }
+  .header__platforms {
+    width: 30vw;
+  }
+  
+
 }
 
 @media (max-width: 1000px) {
@@ -156,10 +158,6 @@
     width: 70px;
     height: 80%;
     margin-top: 1rem;
-  }
-
-  .header__platforms {
-    display: hidden;
   }
 
   .header__title {
@@ -287,6 +285,15 @@
   .header__title {
     display: none;
   }
+
+  .hamburger__line{
+   margin-left: 20vw;
+  }
+
+  .header__platforms{
+    margin-left: 30vw;
+  }
+
 }
 
 /* Celular */
@@ -315,4 +322,6 @@
     font-size: 24px;
     cursor: pointer;
   }
+
+
 }
