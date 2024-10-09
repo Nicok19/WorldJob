@@ -33,7 +33,7 @@ function PresentationProduct() {
 </div>
 
 <div className={styles.container__image}>
-<Image src="/Cellphone.png" width={602} height={733} alt="Phone" />
+<Image src="/Cellphone.png" width={402} height={433} alt="Phone" />
 </div>
 
 
